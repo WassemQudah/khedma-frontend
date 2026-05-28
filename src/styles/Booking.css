@@ -1,0 +1,95 @@
+.booking-page { padding-bottom: 4rem; }
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Summary */
+.booking-summary { position: sticky; top: 86px; }
+.booking-summary__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid var(--c-border);
+  color: var(--c-navy);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.booking-summary__provider {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+.booking-summary__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--c-accent-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  border: 1.5px solid var(--c-border-a);
+}
+.booking-summary__avatar img { width: 100%; height: 100%; object-fit: cover; }
+.booking-summary__name { font-weight: 700; font-size: 0.95rem; color: var(--c-navy); }
+.booking-summary__city {
+  font-size: 0.8rem;
+  color: var(--c-text-3);
+  margin-top: 0.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.booking-summary__categories { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.booking-summary__price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--c-text-2);
+  background: var(--c-surface-2);
+  padding: 0.85rem 1rem;
+  border-radius: var(--r-md);
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--c-border);
+}
+.booking-summary__price-row strong { font-size: 1.05rem; color: var(--c-navy); font-weight: 700; }
+.booking-summary__note { font-size: 0.78rem; color: var(--c-text-3); display: flex; gap: 0.4rem; line-height: 1.5; }
+
+/* Form section */
+.booking-form-section {}
+.booking-form__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--c-navy);
+}
+.booking-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.booking-form__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .booking-layout { grid-template-columns: 1fr; }
+  .booking-summary { position: static; order: 2; }
+  .booking-form-section { order: 1; }
+  .booking-form__actions { flex-direction: column-reverse; }
+  .booking-form__actions .btn { width: 100%; }
+}

@@ -1,0 +1,22 @@
+{
+  "home": "الرئيسية",
+  "browse": "تصفح",
+  "services": "الخدمات",
+  "myBookings": "حجوزاتي",
+  "myDashboard": "لوحة التحكم",
+  "adminPanel": "لوحة الإدارة",
+  "signIn": "تسجيل الدخول",
+  "getStarted": "ابدأ الآن",
+  "myProfile": "ملفي الشخصي",
+  "providerDashboard": "لوحة التحكم",
+  "signOut": "تسجيل الخروج",
+  "toggleMenu": "فتح وإغلاق القائمة",
+  "roles": {
+    "customer": "عميل",
+    "provider": "مقدم خدمة",
+    "admin": "مسؤول"
+  },
+  "langSwitcher": {
+    "ariaLabel": "اختيار اللغة"
+  }
+}

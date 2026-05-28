@@ -1,0 +1,55 @@
+{
+  "title": "تصفح مقدمي الخدمات",
+  "loading": "جارٍ التحميل…",
+  "counts": {
+    "dash": "—",
+    "filteredOnPage": "{{shown}} معروضون في هذه الصفحة ({{total}} مطابقة إجمالاً)",
+    "totalAvailable": "{{total}} مقدمو خدمة متاحون"
+  },
+  "searchPlaceholder": "بحث بالاسم…",
+  "filters": "عوامل التصفية",
+  "viewGridTitle": "عرض شبكة",
+  "viewListTitle": "عرض قائمة",
+  "sidebar": {
+    "filtersHeading": "التصفية",
+    "clearAll": "مسح الكل",
+    "city": "المدينة",
+    "allCities": "جميع المدن",
+    "serviceCategory": "فئة الخدمة",
+    "priceRange": "نطاق السعر (دينار/ساعة)",
+    "min": "الحد الأدنى",
+    "max": "الحد الأقصى",
+    "applyClose": "تطبيق وإغلاق"
+  },
+  "sort": {
+    "title": "ترتيب حسب",
+    "none": "الافتراضي",
+    "ratingDesc": "الأعلى تقييمًا",
+    "ratingAsc": "الأقل تقييمًا"
+  },
+  "errors": {
+    "loadProviders": "تعذّر تحميل قائمة المقدمين."
+  },
+  "retry": "إعادة المحاولة",
+  "empty": {
+    "title": "لا يوجد مقدمو خدمة",
+    "description": "جرّب تغيير عوامل التصفية أو البحث في مدينة أخرى.",
+    "clearFilters": "مسح التصفية"
+  },
+  "pagination": {
+    "ariaLabel": "صفحات نتائج البحث",
+    "previous": "السابق",
+    "next": "التالي",
+    "pageOf": "صفحة {{page}} من {{pages}}",
+    "pageOnly": "صفحة {{page}}",
+    "totalParen": "({{count}} إجمالاً)",
+    "moreOnNextParen": "(مزيد من النتائج في الصفحة التالية)"
+  },
+  "providerCard": {
+    "fallbackName": "مقدم خدمة",
+    "noReviewsYet": "لا توجد تقييمات بعد",
+    "startingFrom": "بدءًا من",
+    "perHour": "/ساعة",
+    "viewProfile": "احجز الان"
+  }
+}

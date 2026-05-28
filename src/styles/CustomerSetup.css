@@ -1,0 +1,91 @@
+.csetup { min-height: calc(100vh - var(--navbar-h)); display: flex; align-items: center; justify-content: center; }
+.csetup__container { max-width: 560px; width: 100%; padding-top: 4rem; padding-bottom: 4rem; }
+
+.csetup__header { text-align: center; margin-bottom: 2rem; }
+.csetup__header h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0.5rem 0 0.5rem; color: var(--c-navy); }
+.csetup__header p  { color: var(--c-text-2); font-size: 0.95rem; }
+
+.csetup__form { padding: 2rem; }
+
+/* Language grid — 2 equal columns */
+.csetup__lang-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.csetup__lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  background: var(--c-surface-2);
+  border: 2px solid var(--c-border);
+  border-radius: var(--r-md);
+  color: var(--c-text-2);
+  cursor: pointer;
+  transition: all var(--t-std);
+  text-align: left;
+}
+.csetup__lang-btn:hover {
+  border-color: var(--c-accent);
+  color: var(--c-text);
+  background: var(--c-surface);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+.csetup__lang-btn--active {
+  border-color: var(--c-accent);
+  background: var(--c-accent-bg);
+  color: var(--c-accent);
+}
+
+/* Flag emoji */
+.csetup__lang-flag {
+  font-size: 1.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Text stack */
+.csetup__lang-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+}
+.csetup__lang-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: inherit;
+  line-height: 1.2;
+}
+.csetup__lang-sub {
+  font-size: 0.75rem;
+  color: var(--c-text-3);
+  font-weight: 400;
+}
+.csetup__lang-btn--active .csetup__lang-sub { color: var(--c-accent); opacity: 0.8; }
+
+/* Check icon pushed to the right */
+.csetup__lang-check {
+  color: var(--c-accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-inline-start: auto;
+}
+
+.csetup__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1.5px solid var(--c-border);
+}
+
+@media (max-width: 480px) {
+  .csetup__actions { flex-direction: column-reverse; }
+  .csetup__actions .btn { width: 100%; justify-content: center; }
+}

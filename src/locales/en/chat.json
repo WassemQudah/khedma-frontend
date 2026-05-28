@@ -1,0 +1,39 @@
+{
+  "titles": {
+    "chat": "Chat",
+    "chats": "Chats",
+    "adminFallback": "Admin",
+    "userFallback": "User"
+  },
+  "subtitle": "{{other}} · {{booking}}",
+  "loadingBooking": "Loading booking…",
+  "loadBookingError": "Could not load chat.",
+  "notFoundBooking": "Chat not available for this booking.",
+  "subtitleAdmin": "{{other}} • {{booking}}",
+  "loadChatsError": "Failed to load chats.",
+  "emptyChatsTitle": "No chats yet.",
+  "emptyChatsBody": "Start a booking to message your provider.",
+  "selectChat": "Select a chat.",
+  "newMessages": "{{count}} new",
+  "messagePlaceholder": "Type a message…",
+  "sendingHint": "{{count}}/500",
+  "sendAria": "Send message",
+  "attachmentAltSent": "You sent",
+  "attachmentAltOther": "{{name}} attachment",
+  "attachmentUnknown": "Unknown",
+  "attachmentClickToView": "(click to view)",
+  "bookingChatTitle": "Booking Chat",
+  "bookingNumber": "Booking #{{id}}",
+  "loadHistoryFallback": "Could not load message history.",
+  "emptyThread": "No messages yet. Start the conversation!",
+  "connectionLostBanner": "Connection lost. Trying to reconnect…",
+  "textareaPlaceholder": "Type a message… (Enter to send, Shift+Enter for new line)",
+  "conn": {
+    "connecting": "Connecting…",
+    "connected": "Live",
+    "reconnecting": "Reconnecting…",
+    "disconnected": "Disconnected"
+  },
+  "notConnectedSend": "Not connected. Please wait and try again.",
+  "sendFailed": "Failed to send. Please try again."
+}

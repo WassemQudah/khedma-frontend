@@ -1,0 +1,12 @@
+{
+  "badge": "حساب عميل",
+  "title": "خطوة أخيرة",
+  "subtitle": "اختر لغتك المفضّلة لنخصّص تجربتك في خدمة.",
+  "preferredLanguage": "اللغة المفضّلة",
+  "profilePhoto": "صورة الملف الشخصي",
+  "photoHint": "أضف صورة شخصية حسابك",
+  "skip": "تخطّي الآن",
+  "saveContinue": "حفظ ومتابعة",
+  "setupFailed": "فشل الإعداد. حاول مجدداً.",
+  "profileSavedToast": "تم حفظ الملف! مرحباً بك في Khedma."
+}

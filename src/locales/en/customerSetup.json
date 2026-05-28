@@ -1,0 +1,12 @@
+{
+  "badge": "Customer Account",
+  "title": "One Last Step",
+  "subtitle": "Choose your preferred language so Khedma can personalise your experience.",
+  "preferredLanguage": "Preferred Language",
+  "profilePhoto": "Profile Photo",
+  "photoHint": "Upload a photo to personalize your account",
+  "skip": "Skip for now",
+  "saveContinue": "Save & Continue",
+  "setupFailed": "Setup failed. Please try again.",
+  "profileSavedToast": "Profile saved! Welcome to Khedma."
+}

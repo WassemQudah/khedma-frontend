@@ -1,0 +1,71 @@
+{
+  "roles": {
+    "Customer": "عميل",
+    "Provider": "مقدّم خدمة",
+    "Admin": "مسؤول",
+    "fallback": "مستخدم"
+  },
+  "loading": "جارٍ تحميل الملف…",
+  "loadError": "تعذّر تحميل الملف.",
+  "retry": "إعادة المحاولة",
+  "heroRating": "{{score}} / 5.0",
+  "sections": {
+    "accountInfo": "معلومات الحساب",
+    "providerProfile": "ملف مقدّم الخدمة"
+  },
+  "fields": {
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "accountType": "نوع الحساب",
+    "profileSetup": "إعداد الملف",
+    "complete": "مكتمل",
+    "pending": "قيد الإكمال",
+    "businessName": "اسم النشاط / العرض",
+    "bio": "نبذة",
+    "businessDisplay": "اسم النشاط",
+    "workCity": "مدينة العمل",
+    "specificLocation": "الموقع التفصيلي",
+    "basePrice": "السعر الأساسي",
+    "rating": "التقييم",
+    "noRatings": "لا تقييمات بعد",
+    "priceValue": "{{price}} دينار/ساعة"
+  },
+  "placeholders": {
+    "fullName": "اسمك الكامل",
+    "phone": "مثال: +962 79 123 4567",
+    "business": "مثال: سباكة علي",
+    "bio": "صف خبرتك ومهاراتك…",
+    "basePrice": "مثال: 25.00",
+    "selectCity": "اختر المدينة…",
+    "specificLocation": "مثال: بالقرب من دوّار عبدون، عمّان"
+  },
+  "labels": {
+    "profilePhoto": "صورة الملف",
+    "photoHint": "JPG أو PNG أو WEBP • بحدّ أقصى 5 ميجابايت",
+    "basePriceRequired": "السعر الأساسي (دينار/ساعة)"
+  },
+  "validation": {
+    "basePriceMin": "السعر يجب أن يكون ديناراً واحداً على الأقل.",
+    "selectCity": "الرجاء اختيار المدينة.",
+    "fullNameRequired": "الاسم الكامل مطلوب."
+  },
+  "toast": {
+    "providerUpdated": "تم تحديث ملف مقدّم الخدمة!",
+    "customerUpdated": "تم تحديث الملف!"
+  },
+  "errors": {
+    "updateFailed": "فشل التحديث. حاول مجدداً."
+  },
+  "displayUser": "مستخدم",
+  "portfolio": {
+    "label": "البعض من اعمالي",
+    "hint": "ارفع صور أعمالك. يمكنك اختيار عدة صور دفعة واحدة. مرّر المؤشر على الصورة واضغط أيقونة الحذف لإزالتها.",
+    "addPhotos": "إضافة صور",
+    "uploading": "جارٍ الرفع…",
+    "remove": "حذف",
+    "imageAlt": "صورة محفظة {{n}}",
+    "uploadError": "فشل رفع إحدى الصور أو أكثر. يرجى المحاولة مجدداً.",
+    "deleteError": "فشل حذف الصورة. يرجى المحاولة مجدداً."
+  }
+}

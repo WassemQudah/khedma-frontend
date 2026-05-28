@@ -1,0 +1,59 @@
+{
+  "loading": "جارٍ تحميل لوحة التحكم…",
+  "loadError": "تعذّر تحميل الحجوزات.",
+  "retry": "إعادة المحاولة",
+  "tabs": {
+    "pending": "طلبات",
+    "accepted": "قادمة",
+    "completed": "مكتملة",
+    "rejected": "مرفوضة"
+  },
+  "stats": {
+    "Requests": "طلبات",
+    "Upcoming": "قادمة",
+    "Completed": "مكتملة",
+    "Declined": "مرفوضة"
+  },
+  "empty": {
+    "pending": "لا توجد طلبات معلّقة حالياً.",
+    "accepted": "لا وظائف مجدولة بعد.",
+    "completed": "لا وظائف مكتملة بعد.",
+    "rejected": "لا طلبات مرفوضة."
+  },
+  "badges": {
+    "pending": "معلّق",
+    "accepted": "مقبول",
+    "completed": "مكتمل",
+    "rejected": "مرفوض"
+  },
+  "customer": "عميل",
+  "customerPhoto": "صورة من العميل",
+  "attachmentAlt": "مرفق من العميل",
+  "chat": "محادثة",
+  "accept": "قبول",
+  "decline": "رفض",
+  "complete": "إكمال",
+  "rateCustomer": "قيّم العميل",
+  "rated": "تم التقييم",
+  "confirm": {
+    "complete": "تأكيد إكمال هذه المهمة؟",
+    "reject": "رفض طلب العمل هذا؟"
+  },
+  "rateModal": {
+    "title": "قيّم هذا العميل",
+    "subtitlePrefix": "كيف كانت تجربتك مع",
+    "subtitleFallback": "هذا العميل",
+    "placeholder": "تعليق (اختياري)…"
+  },
+  "toast": {
+    "accepted": "تم قبول العمل وإشعار العميل.",
+    "acceptFail": "فشل قبول العمل.",
+    "completed": "تم وضع علامة الإكمال!",
+    "completeFail": "فشل إكمال العمل.",
+    "declined": "تم رفض الطلب.",
+    "declineFail": "فشل الرفض.",
+    "ratingSubmitted": "تم إرسال التقييم!",
+    "ratingFail": "فشل التقييم."
+  },
+  "fallbackName": "مقدّم خدمة"
+}

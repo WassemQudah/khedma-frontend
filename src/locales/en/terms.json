@@ -1,0 +1,52 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: January 1, 2026",
+  "backHome": "← Back to Home",
+  "linkPrivacy": "Privacy Policy →",
+  "sections": [
+    {
+      "heading": "1. Acceptance of Terms",
+      "paragraphs": ["By accessing or using the Khedma platform, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our platform."]
+    },
+    {
+      "heading": "2. Description of Service",
+      "paragraphs": ["Khedma is an online marketplace that connects customers with independent service providers for home and business services. We do not directly provide any home services; we provide the platform and tools for customers and providers to connect."]
+    },
+    {
+      "heading": "3. User Accounts",
+      "paragraphs": ["You must create an account to book or offer services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must be at least 18 years of age to use this platform."]
+    },
+    {
+      "heading": "4. Booking and Payments",
+      "paragraphs": ["When you book a service, you agree to pay the agreed-upon price. Cancellations made less than 24 hours before the scheduled service time may be subject to a cancellation fee. All payments are processed securely by our payment partners."]
+    },
+    {
+      "heading": "5. Provider Responsibilities",
+      "paragraphs": ["Service providers agree to maintain all required licenses, certifications, and insurance for the services they offer. Providers must honor confirmed bookings and maintain professional conduct at all times."]
+    },
+    {
+      "heading": "6. Ratings and Reviews",
+      "paragraphs": ["Both customers and providers can leave ratings and reviews after a completed service. Reviews must be honest and based on genuine experience. We reserve the right to remove reviews that violate our community guidelines."]
+    },
+    {
+      "heading": "7. Prohibited Conduct",
+      "paragraphs": ["You agree not to: use the platform for any unlawful purpose, impersonate any person or entity, submit false or misleading information, harass or harm other users, or attempt to gain unauthorized access to our systems."]
+    },
+    {
+      "heading": "8. Limitation of Liability",
+      "paragraphs": ["To the maximum extent permitted by law, Khedma shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the platform or services booked through it."]
+    },
+    {
+      "heading": "9. Governing Law",
+      "paragraphs": ["These Terms shall be governed by and construed in accordance with the laws of the Hashemite Kingdom of Jordan, without regard to its conflict of law provisions."]
+    },
+    {
+      "heading": "10. Changes to Terms",
+      "paragraphs": ["We reserve the right to modify these terms at any time. We will provide notice of significant changes by posting the new terms on this page. Your continued use of the platform after such changes constitutes acceptance of the new terms."]
+    },
+    {
+      "heading": "11. Contact",
+      "contactHtml": "For questions about these Terms, please contact us at <mail>legal@khedma.jo</mail>."
+    }
+  ]
+}

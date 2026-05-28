@@ -1,0 +1,41 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: January 1, 2026",
+  "backHome": "← Back to Home",
+  "linkTerms": "Terms of Service →",
+  "sections": [
+    {
+      "heading": "1. Information We Collect",
+      "paragraphs": ["We collect information you provide directly to us, such as when you create an account, book a service, or contact us for support. This includes:"],
+      "list": ["Name, email address, and password", "Phone number and location (city)", "Service preferences and booking history", "Payment information (processed securely by our payment partners)"]
+    },
+    {
+      "heading": "2. How We Use Your Information",
+      "paragraphs": ["We use the information we collect to provide, maintain, and improve our services, process transactions, send transactional and promotional communications, and comply with legal obligations."]
+    },
+    {
+      "heading": "3. Sharing of Information",
+      "paragraphs": ["We share your information with service providers you book, as necessary to facilitate the service. We do not sell your personal data to third parties. We may share information with trusted third-party service providers who assist us in operating our platform."]
+    },
+    {
+      "heading": "4. Data Security",
+      "paragraphs": ["We take reasonable measures to help protect information about you from loss, theft, misuse, and unauthorized access. Your password is hashed and never stored in plain text. All data is transmitted over HTTPS."]
+    },
+    {
+      "heading": "5. Cookies",
+      "paragraphs": ["We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."]
+    },
+    {
+      "heading": "6. Your Rights",
+      "paragraphs": ["You have the right to access, correct, or delete your personal data at any time. You may also request a copy of your data or object to its processing. Contact us at privacy@khedma.jo to exercise these rights."]
+    },
+    {
+      "heading": "7. Changes to This Policy",
+      "paragraphs": ["We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date above."]
+    },
+    {
+      "heading": "8. Contact Us",
+      "contactHtml": "If you have any questions about this Privacy Policy, please contact us at <mail>privacy@khedma.jo</mail>."
+    }
+  ]
+}

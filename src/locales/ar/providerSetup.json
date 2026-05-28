@@ -1,0 +1,42 @@
+{
+  "badge": "حساب مقدّم خدمة",
+  "title": "إعداد ملف مقدّم الخدمة",
+  "subtitle": "عرّف العملاء بخبرتك ليجدوك ويحجزوا خدماتك.",
+  "setupFailed": "فشل الإعداد. حاول مجدداً.",
+  "successToast": "تم إعداد الملف بنجاح! مرحباً بك في Khedma.",
+  "validation": {
+    "basePriceRequired": "السعر الأساسي مطلوب.",
+    "priceMin": "السعر يجب أن يكون ديناراً واحداً على الأقل.",
+    "priceMax": "السعر لا يمكن أن يتجاوز 1000 دينار.",
+    "cityRequired": "الرجاء اختيار المدينة.",
+    "categoriesRequired": "اختر فئة خدمة واحدة على الأقل."
+  },
+  "businessNameLabel": "اسم النشاط / العرض",
+  "optionalHint": "(اختياري)",
+  "businessPlaceholder": "مثال: سباكة علي",
+  "bioLabel": "نبذة",
+  "bioPlaceholder": "صف خبراتك ومهاراتك وما يميّزك…",
+  "bioHint": "{{len}}/500 — أخبر العملاء لماذا تختارك.",
+  "basePriceLabel": "السعر بالساعة (دينار)",
+  "basePricePlaceholder": "مثال: 25.00",
+  "jodHr": "دينار/ساعة",
+  "workCityLabel": "مدينة العمل",
+  "selectCity": "اختر مدينتك…",
+  "specificLocationLabel": "الموقع التفصيلي",
+  "locationPlaceholder": "مثال: بالقرب من دوّار عبدون، عمّان",
+  "photoLabel": "صورة الملف (اختياري)",
+  "photoHint": "JPG أو PNG أو WEBP • بحدّ أقصى 5 ميجابايت",
+  "categoriesLabel": "فئات الخدمة",
+  "selectedCount": "({{n}} مختارة)",
+  "reviewNote": "سيقوم الفريق بمراجعة ملفك ويصبح ظاهراً خلال 24–48 ساعة.",
+  "completeSetup": "إكمال الإعداد",
+  "portfolio": {
+    "label": "صور الأعمال",
+    "hint": "اعرض أعمالك. يمكنك اختيار عدة صور دفعة واحدة. اضغط أيقونة الحذف لإزالة صورة.",
+    "addPhotos": "إضافة صور",
+    "uploading": "جارٍ الرفع…",
+    "remove": "حذف",
+    "imageAlt": "صورة أعمال {{n}}",
+    "uploadError": "فشل الرفع. يرجى المحاولة مجدداً."
+  }
+}

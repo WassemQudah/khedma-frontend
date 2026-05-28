@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Admin Dashboard",
+  "tagline": "Manage users, providers, and platform data.",
+  "loadingData": "Loading data…",
+  "retry": "Retry",
+  "stats": {
+    "totalUsers": "Total Users",
+    "providers": "Providers",
+    "totalBookings": "Total Bookings",
+    "revenue": "Revenue"
+  },
+  "revenueUnavailable": "—",
+  "currencyJod": "{{amount}} JOD",
+  "tabs": {
+    "users": "Users",
+    "providers": "Providers",
+    "tools": "Tools",
+    "usersCount": "Users ({{count}})",
+    "providersCount": "Providers ({{count}})"
+  },
+  "table": {
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "actions": "Actions",
+    "businessName": "Business Name",
+    "city": "City",
+    "categories": "Categories",
+    "noUsers": "No users found.",
+    "noProviders": "No providers found."
+  },
+  "rolesFallback": {
+    "customer": "Customer"
+  },
+  "statusBadges": {
+    "banned": "Banned",
+    "active": "Active"
+  },
+  "toggleTitle": "Toggle active / banned",
+  "toggle": "Toggle",
+  "confirmDelete": "Permanently delete \"{{name}}\"? This cannot be undone.",
+  "toastToggle": "Status toggled for \"{{name}}\".",
+  "toastToggleFail": "Toggle failed.",
+  "toastDeleted": "\"{{name}}\" has been deleted.",
+  "toastDeleteFail": "Delete failed.",
+  "toastCsvOk": "Categories seeded successfully from CSV!",
+  "toastCsvFail": "CSV upload failed.",
+  "tools": {
+    "csvTitle": "Seed Categories via CSV",
+    "csvDesc": "Upload a CSV file to bulk-import service categories into the platform.",
+    "csvSelect": "Click to select a CSV file",
+    "uploading": "Uploading…",
+    "uploadSeed": "Upload & Seed"
+  },
+  "loadUsersErrorFallback": "Failed to load users."
+}

@@ -1,0 +1,26 @@
+{
+  "backProfile": "Back to Profile",
+  "bookingSummary": "Booking Summary",
+  "loadProviderError": "Could not load provider details.",
+  "bookingFormTitle": "Confirm Your Booking",
+  "validation": {
+    "selectDate": "Please select a service date and time.",
+    "dateFuture": "Service date must be in the future.",
+    "addressRequired": "Service address is required.",
+    "descriptionRequired": "Please describe the work needed."
+  },
+  "successToast": "Booking confirmed! Check your dashboard for details.",
+  "submitFallback": "Booking failed. Please try again.",
+  "baseRate": "Base rate",
+  "priceHr": "{{price}} JOD/hr",
+  "priceNote": "Final price depends on the scope of work agreed with the provider.",
+  "serviceDate": "Service Date & Time",
+  "serviceDateHint": "Choose a date and time that works for you.",
+  "serviceAddress": "Service Address",
+  "addressPlaceholder": "e.g. 12 King Hussein St, Amman",
+  "addressHint": "Where should the provider come to?",
+  "jobDescription": "Job Description",
+  "descriptionPlaceholder": "Describe the work needed — be as specific as possible to get an accurate quote…",
+  "confirmBooking": "Confirm Booking",
+  "defaultInitial": "P"
+}

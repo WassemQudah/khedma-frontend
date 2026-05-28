@@ -1,0 +1,55 @@
+{
+  "title": "Browse Providers",
+  "loading": "Loading…",
+  "counts": {
+    "dash": "—",
+    "filteredOnPage": "{{shown}} shown on this page ({{total}} total matches)",
+    "totalAvailable": "{{total}} providers available"
+  },
+  "searchPlaceholder": "Search by name…",
+  "filters": "Filters",
+  "viewGridTitle": "Grid view",
+  "viewListTitle": "List view",
+  "sidebar": {
+    "filtersHeading": "Filters",
+    "clearAll": "Clear all",
+    "city": "City",
+    "allCities": "All Cities",
+    "serviceCategory": "Service Category",
+    "priceRange": "Price Range (JOD/hr)",
+    "min": "Min",
+    "max": "Max",
+    "applyClose": "Apply & Close"
+  },
+  "sort": {
+    "title": "Sort By",
+    "none": "Default",
+    "ratingDesc": "Highest Rated",
+    "ratingAsc": "Lowest Rated"
+  },
+  "errors": {
+    "loadProviders": "Failed to load providers."
+  },
+  "retry": "Retry",
+  "empty": {
+    "title": "No providers found",
+    "description": "Try adjusting your filters or search in a different city.",
+    "clearFilters": "Clear Filters"
+  },
+  "pagination": {
+    "ariaLabel": "Search results pages",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{pages}}",
+    "pageOnly": "Page {{page}}",
+    "totalParen": "({{count}} total)",
+    "moreOnNextParen": "(more results on next page)"
+  },
+  "providerCard": {
+    "fallbackName": "Provider",
+    "noReviewsYet": "No reviews yet",
+    "startingFrom": "Starting from",
+    "perHour": "/hr",
+    "viewProfile": "View Profile"
+  }
+}

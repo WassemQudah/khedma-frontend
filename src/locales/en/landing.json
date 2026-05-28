@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": "Trusted in 8 cities across Jordan",
+    "titleLine1": "Find Trusted Help,",
+    "titleAccent": "Fast.",
+    "subtitle": "Book verified local professionals for plumbing, electrical, cleaning, and more — all on one platform designed for your home.",
+    "searchPlaceholder": "What do you need help with?",
+    "allCities": "All Cities",
+    "search": "Search"
+  },
+  "categories": {
+    "badge": "Popular Services",
+    "heading": "Everything Your Home Needs",
+    "sub": "From routine maintenance to emergency repairs — we have the right professional for every job."
+  },
+  "howItWorks": {
+    "badge": "Simple Process",
+    "heading": "How It Works",
+    "sub": "Booking a professional takes less than two minutes.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Search",
+        "desc": "Browse hundreds of verified local professionals by service type and city."
+      },
+      {
+        "step": "02",
+        "title": "Book",
+        "desc": "Pick a time that works for you and confirm your booking in seconds."
+      },
+      {
+        "step": "03",
+        "title": "Done",
+        "desc": "Your pro arrives, gets the job done, and you pay securely in-app."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Customer Stories",
+    "heading": "What Our Customers Say",
+    "items": [
+      {
+        "quote": "Found a plumber within 30 minutes of posting. Incredible service!",
+        "name": "Sara M.",
+        "role": "Homeowner",
+        "avatar": "SM"
+      },
+      {
+        "quote": "The electrician was on time, professional, and reasonably priced.",
+        "name": "Ahmed K.",
+        "role": "Homeowner",
+        "avatar": "AK"
+      },
+      {
+        "quote": "We use Khedma for all our office cleaning. Consistent and reliable.",
+        "name": "Rania H.",
+        "role": "Business Owner",
+        "avatar": "RH"
+      }
+    ]
+  },
+  "cta": {
+    "badge": "For Professionals",
+    "heading": "Are you a Pro? Grow your business on Khedma.",
+    "sub": "Join our platform and get connected with thousands of customers looking for your services right now.",
+    "joinProvider": "Join as a Provider",
+    "browseProviders": "Browse Providers"
+  },
+  "footer": {
+    "browse": "Browse Services",
+    "joinProvider": "Join as Provider",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {{year}} Khedma. All rights reserved."
+  }
+}

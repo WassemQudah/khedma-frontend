@@ -1,0 +1,67 @@
+{
+  "pageTitle": "حجوزاتي",
+  "pageSubtitle": "تابع كل حجوزات الخدمات في مكان واحد.",
+  "tabs": {
+    "Pending": "قيد الانتظار",
+    "Accepted": "مؤكدة",
+    "Completed": "مكتملة",
+    "Cancelled": "ملغاة"
+  },
+  "loadError": "تعذّر تحميل الحجوزات.",
+  "findProvider": "البحث عن مقدّم خدمة",
+  "emptyForTab": "لا توجد حجوزات — {{status}}",
+  "emptyHint": "عند حجز خدمة ستظهر هنا.",
+  "defaultProvider": "مقدّم خدمة",
+  "providerPhotoAlt": "صورة مقدّم الخدمة — {{name}}",
+  "statusBadge": {
+    "pending": "قيد الانتظار",
+    "accepted": "مؤكدة",
+    "completed": "مكتملة",
+    "cancelled": "ملغاة"
+  },
+  "toast": {
+    "cancelOk": "تم إلغاء الحجز.",
+    "cancelFail": "فشل الإلغاء. حاول مجدداً.",
+    "updateOk": "تم تحديث الحجز بنجاح!",
+    "updateFail": "فشل التحديث. حاول مجدداً.",
+    "payOk": "تم إرسال الدفع بنجاح!",
+    "payFail": "فشل الدفع. حاول مجدداً.",
+    "rateOk": "شكراً لك! تم إرسال التقييم.",
+    "rateFail": "فشل التقييم."
+  },
+  "attachedPhotoAlt": "صورة مرفقة",
+  "jodHr": "{{n}} دينار/ساعة",
+  "pay": "ادفع",
+  "edit": "تعديل",
+  "cancel": "إلغاء",
+  "chat": "محادثة",
+  "rated": "تم التقييم",
+  "rateProvider": "قيّم مقدّم الخدمة",
+  "confirmCancelMsg": "هل أنت متأكد من إلغاء هذا الحجز؟",
+  "editModal": {
+    "title": "تعديل الحجز",
+    "subtitlePrefix": "حدّث تفاصيل حجزك مع",
+    "subtitleDefault": "مقدّم الخدمة",
+    "serviceDate": "تاريخ ووقت الخدمة",
+    "serviceAddress": "عنوان الخدمة",
+    "jobDesc": "وصف العمل",
+    "addressPh": "مثال: شارع الملكة رانيا، عمان",
+    "descPh": "صف العمل المطلوب…",
+    "errSelectDate": "الرجاء اختيار تاريخ ووقت الخدمة.",
+    "errFuture": "يجب أن يكون الموعد في المستقبل.",
+    "errAddress": "عنوان الخدمة مطلوب.",
+    "errDesc": "صف العمل المطلوب."
+  },
+  "payModal": {
+    "title": "دفع ثمن الحجز",
+    "subtitlePrefix": "اختر وسيلة الدفع لحجزك مع",
+    "subtitleDefault": "مقدّم الخدمة",
+    "cash": "نقداً"
+  },
+  "rateModal": {
+    "title": "قيّم تجربتك",
+    "subtitlePrefix": "كيف كانت تجربتك مع",
+    "subtitleDefault": "مقدّم الخدمة",
+    "placeholder": "تعليق (اختياري)…"
+  }
+}

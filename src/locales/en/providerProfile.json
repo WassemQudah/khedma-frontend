@@ -1,0 +1,32 @@
+{
+  "loading": "Loading profile…",
+  "errorFallback": "Provider not found.",
+  "notFoundTitle": "Provider Not Found",
+  "notFoundDescription": "This provider profile doesn't exist or has been removed.",
+  "backToSearch": "Back to Search",
+  "fallbackName": "Provider",
+  "reviewsCount": "({{count}} reviews)",
+  "startingFrom": "Starting from",
+  "priceAmount": "{{price}} JOD",
+  "perHour": "/hr",
+  "bookService": "Book This Service",
+  "signInToBook": "Sign in to Book",
+  "onlyCustomersBook": "Only customers can book services.",
+  "about": "About",
+  "serviceDetails": "Service Details",
+  "detail": {
+    "basePrice": "Base Price",
+    "basePriceValue": "{{price}} JOD/hr",
+    "serviceArea": "Service Area",
+    "phone": "Phone",
+    "specificLocation": "Specific Location",
+    "avgRating": "Average Rating",
+    "ratingScore": "{{score}} / 5.0",
+    "noRatingsYet": "No ratings yet"
+  },
+  "portfolio": {
+    "title": "Some of my work",
+    "imageAlt": "Portfolio photo {{n}}",
+    "viewImage": "View full image"
+  }
+}

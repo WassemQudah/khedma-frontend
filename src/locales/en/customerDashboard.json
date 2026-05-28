@@ -1,0 +1,67 @@
+{
+  "pageTitle": "My Bookings",
+  "pageSubtitle": "Track and manage all your service bookings in one place.",
+  "tabs": {
+    "Pending": "Pending",
+    "Accepted": "Accepted",
+    "Completed": "Completed",
+    "Cancelled": "Cancelled"
+  },
+  "loadError": "Failed to load bookings.",
+  "findProvider": "Find a Provider",
+  "emptyForTab": "No {{status}} bookings",
+  "emptyHint": "When you book a service, it will appear here.",
+  "defaultProvider": "Service Provider",
+  "providerPhotoAlt": "Provider photo — {{name}}",
+  "statusBadge": {
+    "pending": "Pending",
+    "accepted": "Accepted",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "toast": {
+    "cancelOk": "Booking cancelled.",
+    "cancelFail": "Cancellation failed. Please try again.",
+    "updateOk": "Booking updated successfully!",
+    "updateFail": "Update failed. Please try again.",
+    "payOk": "Payment submitted successfully!",
+    "payFail": "Payment failed. Please try again.",
+    "rateOk": "Rating submitted! Thank you.",
+    "rateFail": "Rating failed."
+  },
+  "attachedPhotoAlt": "Attached photo",
+  "jodHr": "{{n}} JOD/hr",
+  "pay": "Pay",
+  "edit": "Edit",
+  "cancel": "Cancel",
+  "chat": "Chat",
+  "rated": "Rated",
+  "rateProvider": "Rate Provider",
+  "confirmCancelMsg": "Are you sure you want to cancel this booking?",
+  "editModal": {
+    "title": "Edit Booking",
+    "subtitlePrefix": "Update the details for your booking with",
+    "subtitleDefault": "the provider",
+    "serviceDate": "Service Date & Time",
+    "serviceAddress": "Service Address",
+    "jobDesc": "Job Description",
+    "addressPh": "e.g. 12 King Hussein St, Amman",
+    "descPh": "Describe the work needed…",
+    "errSelectDate": "Please select a service date.",
+    "errFuture": "Service date must be in the future.",
+    "errAddress": "Service address is required.",
+    "errDesc": "Please describe the work needed."
+  },
+  "payModal": {
+    "title": "Pay for Booking",
+    "subtitlePrefix": "Select a payment method for your booking with",
+    "subtitleDefault": "the provider",
+    "cash": "Cash"
+  },
+  "rateModal": {
+    "title": "Rate Your Experience",
+    "subtitlePrefix": "How was your experience with",
+    "subtitleDefault": "the provider",
+    "placeholder": "Leave a comment (optional)…"
+  }
+}

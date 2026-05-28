@@ -1,0 +1,57 @@
+{
+  "pageTitle": "لوحة المسؤول",
+  "tagline": "إدارة المستخدمين ومقدّمي الخدمة وبيانات المنصّة.",
+  "loadingData": "جارٍ تحميل البيانات…",
+  "retry": "إعادة المحاولة",
+  "stats": {
+    "totalUsers": "إجمالي المستخدمين",
+    "providers": "مقدّمو الخدمة",
+    "totalBookings": "إجمالي الحجوزات",
+    "revenue": "الإيرادات"
+  },
+  "revenueUnavailable": "—",
+  "currencyJod": "{{amount}} دينار",
+  "tabs": {
+    "users": "مستخدمون",
+    "providers": "مقدّمو خدمة",
+    "tools": "أدوات",
+    "usersCount": "مستخدمون ({{count}})",
+    "providersCount": "مقدّمو خدمة ({{count}})"
+  },
+  "table": {
+    "name": "الاسم",
+    "email": "البريد",
+    "role": "النوع",
+    "status": "الحالة",
+    "actions": "إجراءات",
+    "businessName": "اسم النشاط",
+    "city": "المدينة",
+    "categories": "التصنيفات",
+    "noUsers": "لا مستخدمين.",
+    "noProviders": "لا مقدّمي خدمة."
+  },
+  "rolesFallback": {
+    "customer": "عميل"
+  },
+  "statusBadges": {
+    "banned": "محظور",
+    "active": "نشط"
+  },
+  "toggleTitle": "تبديل نشط / محظور",
+  "toggle": "تبديل",
+  "confirmDelete": "حذف \"{{name}}\" نهائياً؟ لا يمكن التراجع.",
+  "toastToggle": "تم تبديل الحالة لـ «{{name}}».",
+  "toastToggleFail": "فشل التبديل.",
+  "toastDeleted": "تم حذف «{{name}}».",
+  "toastDeleteFail": "فشل الحذف.",
+  "toastCsvOk": "تم استيراد التصنيفات من CSV بنجاح!",
+  "toastCsvFail": "فشل رفع CSV.",
+  "tools": {
+    "csvTitle": "استيراد التصنيفات عبر CSV",
+    "csvDesc": "ارفع ملفاً لاستيراد تصنيفات الخدمات دفعة واحدة.",
+    "csvSelect": "اضغط لاختيار ملف CSV",
+    "uploading": "جارٍ الرفع…",
+    "uploadSeed": "رفع واستيراد"
+  },
+  "loadUsersErrorFallback": "فشل تحميل المستخدمين."
+}

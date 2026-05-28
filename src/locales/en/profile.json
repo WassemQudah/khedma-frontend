@@ -1,0 +1,71 @@
+{
+  "roles": {
+    "Customer": "Customer",
+    "Provider": "Provider",
+    "Admin": "Admin",
+    "fallback": "User"
+  },
+  "loading": "Loading profile…",
+  "loadError": "Failed to load profile.",
+  "retry": "Retry",
+  "heroRating": "{{score}} / 5.0",
+  "sections": {
+    "accountInfo": "Account Information",
+    "providerProfile": "Provider Profile"
+  },
+  "fields": {
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "accountType": "Account Type",
+    "profileSetup": "Profile Setup",
+    "complete": "Complete",
+    "pending": "Pending",
+    "businessName": "Business / Display Name",
+    "bio": "Bio",
+    "businessDisplay": "Business Name",
+    "workCity": "Work City",
+    "specificLocation": "Specific Location",
+    "basePrice": "Base Price",
+    "rating": "Rating",
+    "noRatings": "No ratings yet",
+    "priceValue": "{{price}} JOD/hr"
+  },
+  "placeholders": {
+    "fullName": "Your full name",
+    "phone": "e.g. +962 79 123 4567",
+    "business": "e.g. Ali's Plumbing Services",
+    "bio": "Describe your experience and skills…",
+    "basePrice": "e.g. 25.00",
+    "selectCity": "Select city…",
+    "specificLocation": "e.g. Near Abdoun Circle, Amman"
+  },
+  "labels": {
+    "profilePhoto": "Profile Photo",
+    "photoHint": "JPG, PNG, WEBP • max 5 MB",
+    "basePriceRequired": "Base Price (JOD/hr)"
+  },
+  "validation": {
+    "basePriceMin": "Base price must be at least 1 JOD.",
+    "selectCity": "Please select a city.",
+    "fullNameRequired": "Full name is required."
+  },
+  "toast": {
+    "providerUpdated": "Provider profile updated!",
+    "customerUpdated": "Profile updated!"
+  },
+  "errors": {
+    "updateFailed": "Update failed. Please try again."
+  },
+  "displayUser": "User",
+  "portfolio": {
+    "label": "Some of my work",
+    "hint": "Upload photos of your work. Select multiple at once. Hover an image and click the trash icon to remove it.",
+    "addPhotos": "Add Photos",
+    "uploading": "Uploading…",
+    "remove": "Remove",
+    "imageAlt": "Portfolio photo {{n}}",
+    "uploadError": "One or more uploads failed. Please try again.",
+    "deleteError": "Failed to remove image. Please try again."
+  }
+}

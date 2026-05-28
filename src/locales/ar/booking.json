@@ -1,0 +1,26 @@
+{
+  "backProfile": "العودة للملف الشخصي",
+  "bookingSummary": "ملخص الحجز",
+  "loadProviderError": "تعذّر تحميل بيانات مقدّم الخدمة.",
+  "bookingFormTitle": "تأكيد الحجز",
+  "validation": {
+    "selectDate": "اختر تاريخاً ووقتاً للخدمة.",
+    "dateFuture": "يجب أن يكون موعد الخدمة في المستقبل.",
+    "addressRequired": "عنوان الخدمة مطلوب.",
+    "descriptionRequired": "صف العمل المطلوب."
+  },
+  "successToast": "تم تأكيد الحجز! راجع لوحة التحكم للتفاصيل.",
+  "submitFallback": "فشل الحجز. حاول مجدداً.",
+  "baseRate": "السعر الأساسي",
+  "priceHr": "{{price}} دينار/ساعة",
+  "priceNote": "السعر النهائي يعتمد على نطاق العمل المتفق عليه مع مقدّم الخدمة.",
+  "serviceDate": "تاريخ ووقت الخدمة",
+  "serviceDateHint": "اختر الوقت المناسب لك.",
+  "serviceAddress": "عنوان الخدمة",
+  "addressPlaceholder": "مثال: شارع الملكة رانيا، عمان",
+  "addressHint": "أين يجب أن يصل مقدّم الخدمة؟",
+  "jobDescription": "وصف العمل",
+  "descriptionPlaceholder": "صف العمل المطلوب بأكبر قدر ممكن من التفصيل…",
+  "confirmBooking": "تأكيد الحجز",
+  "defaultInitial": "م"
+}

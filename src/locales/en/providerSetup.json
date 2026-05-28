@@ -1,0 +1,42 @@
+{
+  "badge": "Provider Account",
+  "title": "Set Up Your Provider Profile",
+  "subtitle": "Tell customers about your expertise so they can find and book you.",
+  "setupFailed": "Setup failed. Please try again.",
+  "successToast": "Profile set up successfully! Welcome to Khedma.",
+  "validation": {
+    "basePriceRequired": "Base price is required.",
+    "priceMin": "Price must be at least 1 JOD.",
+    "priceMax": "Price cannot exceed 1000 JOD.",
+    "cityRequired": "Please select a city.",
+    "categoriesRequired": "Select at least one service category."
+  },
+  "businessNameLabel": "Business / Display Name",
+  "optionalHint": "(optional)",
+  "businessPlaceholder": "e.g. Ali's Plumbing Services",
+  "bioLabel": "Bio",
+  "bioPlaceholder": "Describe your experience, skills, and what makes you stand out…",
+  "bioHint": "{{len}}/500 — Tell customers what makes you great.",
+  "basePriceLabel": "Base Hourly Price (JOD)",
+  "basePricePlaceholder": "e.g. 25.00",
+  "jodHr": "JOD/hr",
+  "workCityLabel": "Work City",
+  "selectCity": "Select your city…",
+  "specificLocationLabel": "Specific Location",
+  "locationPlaceholder": "e.g. Near Abdoun Circle, Amman",
+  "photoLabel": "Profile Photo (optional)",
+  "photoHint": "JPG, PNG, WEBP • max 5 MB",
+  "categoriesLabel": "Service Categories",
+  "selectedCount": "({{n}} selected)",
+  "reviewNote": "Your profile will be reviewed by our team and go live within 24–48 hours.",
+  "completeSetup": "Complete Setup",
+  "portfolio": {
+    "label": "Some of your work",
+    "hint": "Showcase your work. Select multiple photos at once. Click the trash icon to remove one.",
+    "addPhotos": "Add Photos",
+    "uploading": "Uploading…",
+    "remove": "Remove",
+    "imageAlt": "Portfolio photo {{n}}",
+    "uploadError": "Upload failed. Please try again."
+  }
+}

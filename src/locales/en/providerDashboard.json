@@ -1,0 +1,59 @@
+{
+  "loading": "Loading dashboard…",
+  "loadError": "Failed to load bookings.",
+  "retry": "Retry",
+  "tabs": {
+    "pending": "Requests",
+    "accepted": "Upcoming",
+    "completed": "Completed",
+    "rejected": "Declined"
+  },
+  "stats": {
+    "Requests": "Requests",
+    "Upcoming": "Upcoming",
+    "Completed": "Completed",
+    "Declined": "Declined"
+  },
+  "empty": {
+    "pending": "No pending requests. Check back later.",
+    "accepted": "No upcoming jobs scheduled yet.",
+    "completed": "No completed jobs yet.",
+    "rejected": "No declined requests."
+  },
+  "badges": {
+    "pending": "Pending",
+    "accepted": "Accepted",
+    "completed": "Completed",
+    "rejected": "Declined"
+  },
+  "customer": "Customer",
+  "customerPhoto": "Customer Photo",
+  "attachmentAlt": "Customer attachment",
+  "chat": "Chat",
+  "accept": "Accept",
+  "decline": "Decline",
+  "complete": "Complete",
+  "rateCustomer": "Rate Customer",
+  "rated": "Rated",
+  "confirm": {
+    "complete": "Mark this job as completed?",
+    "reject": "Reject this job request?"
+  },
+  "rateModal": {
+    "title": "Rate This Customer",
+    "subtitlePrefix": "How was your experience working with",
+    "subtitleFallback": "this customer",
+    "placeholder": "Leave a comment (optional)…"
+  },
+  "toast": {
+    "accepted": "Job accepted! The customer has been notified.",
+    "acceptFail": "Failed to accept job.",
+    "completed": "Job marked as completed!",
+    "completeFail": "Failed to complete job.",
+    "declined": "Job declined.",
+    "declineFail": "Failed to decline job.",
+    "ratingSubmitted": "Rating submitted!",
+    "ratingFail": "Rating failed."
+  },
+  "fallbackName": "Provider"
+}

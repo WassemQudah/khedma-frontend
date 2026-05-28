@@ -1,0 +1,39 @@
+{
+  "titles": {
+    "chat": "محادثة",
+    "chats": "المحادثات",
+    "adminFallback": "مسؤول",
+    "userFallback": "مستخدم"
+  },
+  "subtitle": "{{other}} · {{booking}}",
+  "loadingBooking": "جارٍ تحميل الحجز…",
+  "loadBookingError": "تعذّر تحميل المحادثة.",
+  "notFoundBooking": "لا محادثة لهذا الحجز.",
+  "subtitleAdmin": "{{other}} • {{booking}}",
+  "loadChatsError": "تعذّر تحميل المحادثات.",
+  "emptyChatsTitle": "لا محادثات بعد.",
+  "emptyChatsBody": "ابدأ حجزاً لمراسلة مقدّم الخدمة.",
+  "selectChat": "اختر محادثة.",
+  "newMessages": "{{count}} جديد",
+  "messagePlaceholder": "اكتب رسالة…",
+  "sendingHint": "{{count}}/500",
+  "sendAria": "إرسال",
+  "attachmentAltSent": "أنت أرسلت",
+  "attachmentAltOther": "مرفق من {{name}}",
+  "attachmentUnknown": "غير معروف",
+  "attachmentClickToView": "(اضغط للعرض)",
+  "bookingChatTitle": "محادثة الحجز",
+  "bookingNumber": "حجز #{{id}}",
+  "loadHistoryFallback": "تعذّر تحميل الرسائل.",
+  "emptyThread": "لا رسائل بعد. ابدأ المحادثة!",
+  "connectionLostBanner": "انقطع الاتصال. جاري إعادة المحاولة…",
+  "textareaPlaceholder": "اكتب رسالة… (Enter للإرسال، Shift+Enter سطر جديد)",
+  "conn": {
+    "connecting": "جارٍ الاتصال…",
+    "connected": "مباشر",
+    "reconnecting": "إعادة الاتصال…",
+    "disconnected": "غير متصل"
+  },
+  "notConnectedSend": "غير متصل. انتظر وحاول مجدداً.",
+  "sendFailed": "فشل الإرسال. حاول مجدداً."
+}

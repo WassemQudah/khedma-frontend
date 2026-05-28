@@ -1,0 +1,22 @@
+{
+  "home": "Home",
+  "browse": "Browse",
+  "services": "Services",
+  "myBookings": "My Bookings",
+  "myDashboard": "My Dashboard",
+  "adminPanel": "Admin Panel",
+  "signIn": "Sign In",
+  "getStarted": "Get Started",
+  "myProfile": "My Profile",
+  "providerDashboard": "Dashboard",
+  "signOut": "Sign Out",
+  "toggleMenu": "Toggle menu",
+  "roles": {
+    "customer": "Customer",
+    "provider": "Provider",
+    "admin": "Admin"
+  },
+  "langSwitcher": {
+    "ariaLabel": "Choose language"
+  }
+}

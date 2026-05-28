@@ -1,0 +1,32 @@
+{
+  "loading": "جارٍ تحميل الملف…",
+  "errorFallback": "لم يُعثر على مقدم الخدمة.",
+  "notFoundTitle": "مقدم الخدمة غير موجود",
+  "notFoundDescription": "هذا الملف غير موجود أو تمت إزالته.",
+  "backToSearch": "العودة إلى البحث",
+  "fallbackName": "مقدم خدمة",
+  "reviewsCount": "({{count}} تقييم)",
+  "startingFrom": "بدءًا من",
+  "priceAmount": "{{price}} دينار",
+  "perHour": "/ساعة",
+  "bookService": "احجز هذه الخدمة",
+  "signInToBook": "سجّل الدخول للحجز",
+  "onlyCustomersBook": "الحجز متاح للعملاء فقط.",
+  "about": "نبذة",
+  "serviceDetails": "تفاصيل الخدمة",
+  "detail": {
+    "basePrice": "السعر الأساسي",
+    "basePriceValue": "{{price}} دينار/ساعة",
+    "serviceArea": "منطقة الخدمة",
+    "phone": "الهاتف",
+    "specificLocation": "الموقع التفصيلي",
+    "avgRating": "متوسط التقييم",
+    "ratingScore": "{{score}} / 5.0",
+    "noRatingsYet": "لا تقييمات بعد"
+  },
+  "portfolio": {
+    "title": "البعض من اعمالي",
+    "imageAlt": "صورة معرض {{n}}",
+    "viewImage": "عرض الصورة كاملة"
+  }
+}
