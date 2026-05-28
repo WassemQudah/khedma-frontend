@@ -15,14 +15,14 @@ export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("users");
   const { categories: allCategories } = useCategories();
 
-  const [stats,       setStats]       = useState(null);
-  const [users,       setUsers]       = useState([]);
-  const [providers,   setProviders]   = useState([]);
-  const [loading,     setLoading]     = useState(true);
-  const [error,       setError]       = useState("");
-  const [actionId,    setActionId]    = useState(null);
+  const [stats, setStats] = useState(null);
+  const [users, setUsers] = useState([]);
+  const [providers, setProviders] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [actionId, setActionId] = useState(null);
 
-  const [csvFile,      setCsvFile]      = useState(null);
+  const [csvFile, setCsvFile] = useState(null);
   const [csvUploading, setCsvUploading] = useState(false);
   const csvInputRef = useRef(null);
 
@@ -86,17 +86,17 @@ export default function AdminDashboard() {
   };
 
   const revenueDisplay =
-      stats?.totalRevenue != null
-        ? t("currencyJod", { amount: Number(stats.totalRevenue).toFixed(0) })
-        : stats?.revenue != null
-          ? t("currencyJod", { amount: Number(stats.revenue).toFixed(0) })
-          : t("revenueUnavailable");
+    stats?.totalRevenue != null
+      ? t("currencyJod", { amount: Number(stats.totalRevenue).toFixed(0) })
+      : stats?.revenue != null
+        ? t("currencyJod", { amount: Number(stats.revenue).toFixed(0) })
+        : t("revenueUnavailable");
 
   const statCards = [
-    { icon: "ri-user-line",               labelKey: "stats.totalUsers",     value: stats?.totalUsers     ?? stats?.usersCount     ?? users.length },
-    { icon: "ri-tools-line",              labelKey: "stats.providers",       value: stats?.totalProviders ?? stats?.providersCount ?? providers.length },
-    { icon: "ri-calendar-check-line",     labelKey: "stats.totalBookings",  value: stats?.totalBookings  ?? stats?.bookingsCount  ?? tc("dash") },
-    { icon: "ri-money-dollar-circle-line",labelKey: "stats.revenue", value: revenueDisplay },
+    { icon: "ri-user-line", labelKey: "stats.totalUsers", value: stats?.totalUsers ?? stats?.usersCount ?? users.length },
+    { icon: "ri-tools-line", labelKey: "stats.providers", value: stats?.totalProviders ?? stats?.providersCount ?? providers.length },
+    { icon: "ri-calendar-check-line", labelKey: "stats.totalBookings", value: stats?.totalBookings ?? stats?.bookingsCount ?? tc("dash") },
+    // { icon: "ri-money-dollar-circle-line", labelKey: "stats.revenue", value: revenueDisplay },
   ];
 
   const ActionCell = ({ id, name }) => {
@@ -140,9 +140,9 @@ export default function AdminDashboard() {
 
         <div className="tabs admin-tabs">
           {[
-            { key: "users",     icon: "ri-user-line",   label: t("tabs.usersCount", { count: users.length }) },
-            { key: "providers", icon: "ri-tools-line",  label: t("tabs.providersCount", { count: providers.length }) },
-            { key: "tools",     icon: "ri-settings-3-line", label: t("tabs.tools") },
+            { key: "users", icon: "ri-user-line", label: t("tabs.usersCount", { count: users.length }) },
+            { key: "providers", icon: "ri-tools-line", label: t("tabs.providersCount", { count: providers.length }) },
+            // { key: "tools", icon: "ri-settings-3-line", label: t("tabs.tools") },
           ].map(({ key, icon, label }) => (
             <button
               key={key}
@@ -215,7 +215,7 @@ export default function AdminDashboard() {
                   <div className="table-wrapper">
                     <table className="table">
                       <thead>
-                        <tr><th>{t("table.businessName")}</th><th>{t("table.city")}</th><th>{t("table.categories")}</th><th>{t("table.email")}</th><th>{t("table.status")}</th><th>{t("table.actions")}</th></tr>
+                        <tr><th>{t("table.businessName")}</th><th>{t("table.email")}</th><th>{t("table.status")}</th><th>{t("table.actions")}</th></tr>
                       </thead>
                       <tbody>
                         {providers.map((p) => {
@@ -230,12 +230,7 @@ export default function AdminDashboard() {
                                   {p.businessName ?? p.fullName ?? tc("dash")}
                                 </div>
                               </td>
-                              <td>{p.workCity ?? tc("dash")}</td>
-                              <td>
-                                <span className="admin-categories">
-                                  {resolveCategories(p, allCategories).map((c) => c.name).join(", ") || tc("dash")}
-                                </span>
-                              </td>
+
                               <td className="admin-email">{p.email}</td>
                               <td>
                                 <span className={`badge badge--${p.isActive === false || p.isBanned ? "cancelled" : "confirmed"}`}>
@@ -253,7 +248,7 @@ export default function AdminDashboard() {
               </div>
             )}
 
-            {activeTab === "tools" && (
+            {/* {activeTab === "tools" && (
               <div className="admin-tools">
                 <div className="card admin-tool-card">
                   <div className="admin-tool-card__header">
@@ -292,7 +287,7 @@ export default function AdminDashboard() {
                   </form>
                 </div>
               </div>
-            )}
+            )} */}
           </>
         )}
       </div>

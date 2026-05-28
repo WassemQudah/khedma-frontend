@@ -18,11 +18,11 @@
 .navbar__inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
   height: 68px;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 /* Logo */
@@ -297,30 +297,98 @@
 .navbar__hamburger.open span:nth-child(2) { opacity: 0; }
 .navbar__hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* Desktop: hide mobile-only menu extras */
+.navbar__mobile-divider,
+.navbar__mobile-extra,
+.navbar__mobile-auth,
+.navbar__mobile-user,
+.navbar__mobile-item { display: none; }
+
 /* ── Mobile ───────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .navbar__hamburger { display: flex; }
   .navbar__username  { display: none; }
   .navbar__chevron   { display: none; }
 
+  /* Hide language switcher and auth from top bar on mobile */
+  .navbar__lang { display: none; }
+  .navbar__auth { display: none; }
+
+  /* Show mobile-only menu extras */
+  .navbar__mobile-divider { display: block; }
+  .navbar__mobile-extra   { display: flex; }
+  .navbar__mobile-auth    { display: flex; }
+  .navbar__mobile-user    { display: flex; }
+  .navbar__mobile-item    { display: list-item; }
+
   .navbar__links {
     display: none;
     position: absolute;
     top: 72px;
-    left: 1rem;
-    right: 1rem;
+    left: 0.75rem;
+    right: 0.75rem;
     background: var(--c-surface);
     border: 1.5px solid var(--c-border);
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-lg);
-    padding: 0.75rem;
+    padding: 0.75rem 0.75rem 1rem;
     flex-direction: column;
     gap: 0.25rem;
     z-index: 999;
   }
   .navbar__links.open { display: flex; animation: fadeUp 0.2s ease both; }
-  .navbar__links li a { width: 100%; }
+  .navbar__links li { width: 100%; }
+  .navbar__links li a {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border-radius: var(--r-md);
+    font-size: 0.95rem;
+  }
   .navbar__links li a::after { display: none; }
+  .navbar__links li a:hover,
+  .navbar__links li a.active {
+    background: var(--c-surface-2);
+  }
 
-  .navbar__auth .btn--ghost { display: none; }
+  /* Mobile menu divider & extra rows */
+  .navbar__mobile-divider {
+    height: 1.5px;
+    background: var(--c-border);
+    margin: 0.5rem 0.25rem;
+  }
+
+  .navbar__mobile-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.5rem 0;
+    gap: 0.5rem;
+  }
+
+  .navbar__mobile-auth {
+    display: flex;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .navbar__mobile-auth .btn {
+    flex: 1;
+    font-size: 0.875rem;
+    padding: 0.55rem 0.75rem;
+  }
+
+  /* User button in mobile menu */
+  .navbar__mobile-user {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--c-surface-2);
+    border-radius: var(--r-md);
+    border: 1.5px solid var(--c-border);
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--c-text);
+  }
 }

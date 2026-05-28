@@ -98,7 +98,9 @@ export default function ProviderProfile() {
             <div className="pp-header__meta">
               <span>{provider.workCity}</span>
               {provider.phoneNumber && (
-                <span><i className="ri-phone-line" /> {provider.phoneNumber}</span>
+                <span style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${provider.phoneNumber}`}>
+                  <i className="ri-phone-line" /> {provider.phoneNumber}
+                </span>
               )}
               {rating != null && rating > 0 && (
                 <span>
@@ -216,7 +218,7 @@ export default function ProviderProfile() {
               </div>
             </div>
             {provider.phoneNumber && (
-              <div className="pp-detail-item">
+              <div className="pp-detail-item" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${provider.phoneNumber}`}>
                 <i className="ri-phone-line" />
                 <div>
                   <p className="pp-detail-label">{t("detail.phone")}</p>

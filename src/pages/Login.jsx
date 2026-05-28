@@ -68,7 +68,26 @@ export default function Login() {
   const validateSignIn = () => {
     const e = {};
     const v = "validation";
-    if (!signIn.email.trim()) e.email = t(`${v}.emailRequired`);
+    const emailVal = signIn.email.trim();
+    if (!emailVal) {
+      e.email = t(`${v}.emailRequired`);
+    } else if (!emailVal.includes("@")) {
+      // Clean phone number for validation
+      let phone = emailVal.replace(/[\s\-()]/g, "");
+      if (phone.startsWith("+962")) phone = "0" + phone.slice(4);
+      else if (phone.startsWith("00962")) phone = "0" + phone.slice(5);
+      else if (phone.startsWith("962")) phone = "0" + phone.slice(3);
+
+      if (!/^07[789]\d{7}$/.test(phone)) {
+        e.email = t(`${v}.phoneInvalid`);
+      } else {
+        signIn.email = phone; // Store clean version
+      }
+    } else {
+      if (!/\S+@\S+\.\S+/.test(emailVal)) {
+        e.email = t(`${v}.emailInvalid`);
+      }
+    }
     if (!signIn.password.trim()) e.password = t(`${v}.passwordRequired`);
     setErrors(e);
     return Object.keys(e).length === 0;
@@ -102,9 +121,21 @@ export default function Login() {
     if (!signUp.fullName.trim()) e.fullName = t(`${v}.fullNameRequired`);
     if (!signUp.email.trim()) e.email = t(`${v}.emailRequired`);
     else if (!/\S+@\S+\.\S+/.test(signUp.email)) e.email = t(`${v}.emailInvalid`);
-    if (!signUp.phoneNumber.trim()) e.phoneNumber = t(`${v}.phoneRequired`);
-    else if (!/^\+?[\d\s\-()]{7,15}$/.test(signUp.phoneNumber.trim()))
+
+    // Clean and normalize phone number
+    let phone = signUp.phoneNumber.trim().replace(/[\s\-()]/g, "");
+    if (phone.startsWith("+962")) phone = "0" + phone.slice(4);
+    else if (phone.startsWith("00962")) phone = "0" + phone.slice(5);
+    else if (phone.startsWith("962")) phone = "0" + phone.slice(3);
+
+    if (!signUp.phoneNumber.trim()) {
+      e.phoneNumber = t(`${v}.phoneRequired`);
+    } else if (!/^07[789]\d{7}$/.test(phone)) {
       e.phoneNumber = t(`${v}.phoneInvalid`);
+    } else {
+      signUp.phoneNumber = phone; // Store sanitized format
+    }
+
     if (!signUp.password.trim()) e.password = t(`${v}.passwordRequired`);
     else if (signUp.password.length < 8) e.password = t(`${v}.passwordMin`);
     if (signUp.password !== signUp.confirmPassword) e.confirmPassword = t(`${v}.passwordMismatch`);
@@ -186,7 +217,7 @@ export default function Login() {
               <input
                 id="si-email"
                 name="email"
-                type="email"
+                type="text"
                 autoComplete="email"
                 placeholder={t("emailPlaceholder")}
                 value={signIn.email}
@@ -285,6 +316,8 @@ export default function Login() {
                 placeholder={t("phonePlaceholder")}
                 value={signUp.phoneNumber}
                 onChange={changeSignUp}
+                pattern="^07[789]\d{7}$"
+                maxLength={10}
               />
               {errors.phoneNumber && <span className="form-error">{errors.phoneNumber}</span>}
             </div>

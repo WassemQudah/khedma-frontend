@@ -15,7 +15,7 @@ import "../styles/Profile.css";
 function RateCustomerModal({ booking, onClose, onSubmit }) {
   const { t } = useTranslation("providerDashboard");
   const { t: tc } = useTranslation("common");
-  const [rating,  setRating]  = useState(0);
+  const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -110,8 +110,8 @@ function getCustomerAvatar(booking) {
 function CustomerAvatar({ booking, size = 42 }) {
   const name = booking.customerName ?? booking.CustomerName ?? "C";
   const initial = name.charAt(0).toUpperCase();
-  const imgUrl  = getCustomerAvatar(booking);
-  const style   = { width: size, height: size, flexShrink: 0 };
+  const imgUrl = getCustomerAvatar(booking);
+  const style = { width: size, height: size, flexShrink: 0 };
 
   if (imgUrl) {
     return (
@@ -140,7 +140,7 @@ function CustomerAvatar({ booking, size = 42 }) {
 
 function CustomerReputation({ rating }) {
   const { t } = useTranslation("providerDashboard");
-  
+
   return (
     <div className="customer-reputation" style={{ display: "flex", alignItems: "center", gap: "0.25rem", fontSize: "0.85rem", marginTop: "2px", marginBottom: "4px" }}>
       {rating && rating > 0 ? (
@@ -164,23 +164,23 @@ export default function ProviderDashboard() {
   const { showToast } = useToast();
 
   const tabs = useMemo(() => [
-    { key: "pending",   label: t("tabs.pending"),   icon: "ri-notification-4-line" },
-    { key: "accepted",  label: t("tabs.accepted"),  icon: "ri-calendar-check-line" },
-    { key: "completed", label: t("tabs.completed"), icon: "ri-check-double-line"   },
-    { key: "rejected",  label: t("tabs.rejected"),  icon: "ri-close-circle-line"   },
+    { key: "pending", label: t("tabs.pending"), icon: "ri-notification-4-line" },
+    { key: "accepted", label: t("tabs.accepted"), icon: "ri-calendar-check-line" },
+    { key: "completed", label: t("tabs.completed"), icon: "ri-check-double-line" },
+    { key: "rejected", label: t("tabs.rejected"), icon: "ri-close-circle-line" },
   ], [t]);
 
   const locale = pickDateLocale(i18n.language);
 
-  const [allBookings,    setAllBookings]    = useState([]);
-  const [loading,        setLoading]        = useState(true);
-  const [error,          setError]          = useState("");
-  const [activeTab,      setActiveTab]      = useState("pending");
-  const [actionId,       setActionId]       = useState(null);
-  const [rateModal,      setRateModal]      = useState(null);
-  const [confirmModal,   setConfirmModal]   = useState(null); // { action, bookingId, message }
+  const [allBookings, setAllBookings] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [activeTab, setActiveTab] = useState("pending");
+  const [actionId, setActionId] = useState(null);
+  const [rateModal, setRateModal] = useState(null);
+  const [confirmModal, setConfirmModal] = useState(null); // { action, bookingId, message }
   // bookingId → { isRatedByCustomer, isRatedByProvider }
-  const [reviewStatuses,  setReviewStatuses]  = useState({});
+  const [reviewStatuses, setReviewStatuses] = useState({});
 
   const fetchBookings = async () => {
     setLoading(true); setError("");
@@ -242,7 +242,7 @@ export default function ProviderDashboard() {
     const { action, bookingId } = confirmModal;
     setConfirmModal(null);
     setActionId(bookingId);
-    
+
     if (action === "complete") {
       try {
         await api.put(`/api/Booking/${bookingId}/status`, { status: "Completed" });
@@ -277,10 +277,10 @@ export default function ProviderDashboard() {
     }
   };
 
-  const pending   = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "pending");
-  const accepted  = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "accepted");
+  const pending = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "pending");
+  const accepted = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "accepted");
   const completed = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "completed");
-  const rejected  = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "rejected");
+  const rejected = allBookings.filter((b) => (b.status ?? "").toLowerCase() === "rejected");
 
   const formatDate = (iso) => {
     if (!iso) return tc("dash");
@@ -293,10 +293,10 @@ export default function ProviderDashboard() {
 
   const tabData = { pending, accepted, completed, rejected };
   const emptyMessages = {
-    pending:   { icon: "ri-inbox-line",       text: t("empty.pending") },
-    accepted:  { icon: "ri-calendar-2-line",  text: t("empty.accepted") },
-    completed: { icon: "ri-check-double-line",text: t("empty.completed") },
-    rejected:  { icon: "ri-close-circle-line",text: t("empty.rejected") },
+    pending: { icon: "ri-inbox-line", text: t("empty.pending") },
+    accepted: { icon: "ri-calendar-2-line", text: t("empty.accepted") },
+    completed: { icon: "ri-check-double-line", text: t("empty.completed") },
+    rejected: { icon: "ri-close-circle-line", text: t("empty.rejected") },
   };
 
   if (loading) return <LoadingSpinner fullPage text={t("loading")} />;
@@ -319,10 +319,10 @@ export default function ProviderDashboard() {
         {/* ── Summary strip ──────────────────────────────────────────── */}
         <div className="pdash-stats">
           {[
-            { labelKey: "stats.Requests",  count: pending.length,  icon: "ri-notification-4-line", color: "warning" },
-            { labelKey: "stats.Upcoming",  count: accepted.length, icon: "ri-calendar-line",       color: "accent"  },
-            { labelKey: "stats.Completed", count: completed.length,icon: "ri-check-double-line",   color: "success" },
-            { labelKey: "stats.Declined",  count: rejected.length, icon: "ri-close-circle-line",   color: "danger"  },
+            { labelKey: "stats.Requests", count: pending.length, icon: "ri-notification-4-line", color: "warning" },
+            { labelKey: "stats.Upcoming", count: accepted.length, icon: "ri-calendar-line", color: "accent" },
+            { labelKey: "stats.Completed", count: completed.length, icon: "ri-check-double-line", color: "success" },
+            { labelKey: "stats.Declined", count: rejected.length, icon: "ri-close-circle-line", color: "danger" },
           ].map(({ labelKey, count, icon, color }) => (
             <div key={labelKey} className={`pdash-stat pdash-stat--${color}`}>
               <i className={icon} />
@@ -380,9 +380,11 @@ export default function ProviderDashboard() {
                   <p className="pdash-request__notes"><i className="ri-map-pin-line" /> {booking.serviceAddress}</p>
                 )}
                 {booking.customerPhone && (
-                  <p className="pdash-request__notes">
+                  <p className="pdash-request__notes" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${booking.customerPhone}`}>
                     <i className="ri-phone-line" />
-                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }}>{booking.customerPhone}</a>
+                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }} onClick={(e) => e.stopPropagation()}>
+                      {booking.customerPhone}
+                    </a>
                   </p>
                 )}
                 {booking.description && (
@@ -443,9 +445,11 @@ export default function ProviderDashboard() {
                   <p className="pdash-request__notes"><i className="ri-map-pin-line" /> {booking.serviceAddress}</p>
                 )}
                 {booking.customerPhone && (
-                  <p className="pdash-request__notes">
+                  <p className="pdash-request__notes" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${booking.customerPhone}`}>
                     <i className="ri-phone-line" />
-                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }}>{booking.customerPhone}</a>
+                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }} onClick={(e) => e.stopPropagation()}>
+                      {booking.customerPhone}
+                    </a>
                   </p>
                 )}
                 {booking.description && (
@@ -497,6 +501,14 @@ export default function ProviderDashboard() {
                 {booking.serviceAddress && (
                   <p className="pdash-request__notes"><i className="ri-map-pin-line" /> {booking.serviceAddress}</p>
                 )}
+                {booking.customerPhone && (
+                  <p className="pdash-request__notes" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${booking.customerPhone}`}>
+                    <i className="ri-phone-line" />
+                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }} onClick={(e) => e.stopPropagation()}>
+                      {booking.customerPhone}
+                    </a>
+                  </p>
+                )}
                 {booking.description && (
                   <p className="pdash-request__notes"><i className="ri-sticky-note-line" /> {booking.description}</p>
                 )}
@@ -546,9 +558,11 @@ export default function ProviderDashboard() {
                   <p className="pdash-request__notes"><i className="ri-map-pin-line" /> {booking.serviceAddress}</p>
                 )}
                 {booking.customerPhone && (
-                  <p className="pdash-request__notes">
+                  <p className="pdash-request__notes" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${booking.customerPhone}`}>
                     <i className="ri-phone-line" />
-                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }}>{booking.customerPhone}</a>
+                    <a href={`tel:${booking.customerPhone}`} style={{ color: "inherit" }} onClick={(e) => e.stopPropagation()}>
+                      {booking.customerPhone}
+                    </a>
                   </p>
                 )}
                 {booking.description && (

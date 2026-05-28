@@ -380,7 +380,7 @@ export async function cancelBooking(bookingId, currentStatus, serviceDate) {
     err.isValidationError = true;
     throw err;
   }
-  const { data } = await api.put(`/api/Booking/${bookingId}/status`, { status: "Cancelled" });
+  const { data } = await api.put(`/api/booking/${bookingId}/cancel`);
   return data;
 }
 

@@ -201,9 +201,7 @@ export default function Landing() {
       <footer className="site-footer">
         <div className="container">
           <div className="site-footer__inner">
-            <div className="site-footer__brand">
-              <span>K</span>hedma
-            </div>
+
             <nav className="site-footer__links">
               <Link to="/search">{t("footer.browse")}</Link>
               <Link to="/login?tab=signup">{t("footer.joinProvider")}</Link>

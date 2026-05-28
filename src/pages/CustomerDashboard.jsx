@@ -294,10 +294,10 @@ export default function CustomerDashboard() {
   const navigate = useNavigate();
 
   const tabs = useMemo(() => ([
-    { key: "Pending",    label: t("tabs.Pending"),    icon: "ri-time-line" },
-    { key: "Accepted",   label: t("tabs.Accepted"),   icon: "ri-calendar-check-line" },
-    { key: "Completed",  label: t("tabs.Completed"),  icon: "ri-check-double-line" },
-    { key: "Cancelled",  label: t("tabs.Cancelled"),  icon: "ri-close-circle-line" },
+    { key: "Pending", label: t("tabs.Pending"), icon: "ri-time-line" },
+    { key: "Accepted", label: t("tabs.Accepted"), icon: "ri-calendar-check-line" },
+    { key: "Completed", label: t("tabs.Completed"), icon: "ri-check-double-line" },
+    { key: "Cancelled", label: t("tabs.Cancelled"), icon: "ri-close-circle-line" },
   ]), [t]);
 
   const [bookings, setBookings] = useState([]);
@@ -482,9 +482,9 @@ export default function CustomerDashboard() {
                   </p>
                 )}
                 {booking.providerPhone && (
-                  <p className="booking-card__notes">
+                  <p className="booking-card__notes" style={{ cursor: "pointer" }} onClick={() => window.location.href = `tel:${booking.providerPhone}`}>
                     <i className="ri-phone-line" />
-                    <a href={`tel:${booking.providerPhone}`} style={{ color: "inherit" }}>
+                    <a href={`tel:${booking.providerPhone}`} style={{ color: "inherit" }} onClick={(e) => e.stopPropagation()}>
                       {booking.providerPhone}
                     </a>
                   </p>

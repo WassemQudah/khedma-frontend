@@ -156,7 +156,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-mark">K</span>hedma
+          <img src="/src/assets/NoBgKhedma.png" alt="Khedma Logo" style={{ height: "52px", objectFit: "contain" }} />
         </Link>
 
         <button
@@ -173,9 +173,62 @@ export default function Navbar() {
 
         <ul
           className={`navbar__links ${menuOpen ? "open" : ""}`}
-          onClick={closeMenus}
         >
           {navLinks}
+
+          {/* Mobile-only extras */}
+          <li className="navbar__mobile-divider" />
+          <li className="navbar__mobile-extra">
+            <LanguageSwitcher className="navbar__lang" />
+          </li>
+          <li className="navbar__mobile-divider" />
+          {!user ? (
+            <li className="navbar__mobile-extra">
+              <div className="navbar__mobile-auth">
+                <button
+                  type="button"
+                  className="btn btn--ghost"
+                  onClick={() => { closeMenus(); navigate("/login"); }}
+                >
+                  {t("signIn")}
+                </button>
+                <button
+                  type="button"
+                  className="btn btn--primary"
+                  onClick={() => { closeMenus(); navigate("/login?tab=signup"); }}
+                >
+                  {t("getStarted")}
+                </button>
+              </div>
+            </li>
+          ) : (
+            <>
+              <li className="navbar__mobile-item">
+                <div className="navbar__mobile-user">
+                  <span className="navbar__avatar" style={{ width: 32, height: 32, fontSize: "0.72rem" }}>
+                    {avatarImg ? (
+                      <img src={avatarImg} alt="" className="navbar__avatar-img" />
+                    ) : (
+                      initials
+                    )}
+                  </span>
+                  <span style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                    {user.fullName ?? user.email}
+                  </span>
+                </div>
+              </li>
+              <li className="navbar__mobile-item">
+                <button
+                  type="button"
+                  className="navbar__dropdown-item navbar__dropdown-item--danger"
+                  style={{ width: "100%", borderRadius: "var(--r-md)", padding: "0.65rem 1rem", fontSize: "0.875rem" }}
+                  onClick={() => { closeMenus(); handleLogout(); }}
+                >
+                  <i className="ri-logout-box-r-line" /> {t("signOut")}
+                </button>
+              </li>
+            </>
+          )}
         </ul>
 
         <LanguageSwitcher className="navbar__lang" />

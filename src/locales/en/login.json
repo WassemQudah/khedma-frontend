@@ -28,7 +28,7 @@
   "fullNamePlaceholder": "Your Name",
   "emailAddressLabel": "Email Address",
   "phoneLabel": "Phone Number",
-  "phonePlaceholder": "+962 7X XXX XXXX",
+  "phonePlaceholder": "07XXXXXXXX",
   "passwordSignupLabel": "Password",
   "passwordSignupPlaceholder": "Min. 8 characters",
   "confirmPasswordLabel": "Confirm Password",
