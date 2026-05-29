@@ -18,6 +18,7 @@ import AdminDashboard     from "./pages/AdminDashboard";
 import Privacy         from "./pages/Privacy";
 import Terms           from "./pages/Terms";
 import NotFound        from "./pages/NotFound";
+import ForgotPassword  from "./pages/ForgotPassword";
 
 export default function App() {
   return (
@@ -26,8 +27,9 @@ export default function App() {
 
       <Routes>
         {/* ── Public ────────────────────────────────────────────────────── */}
-        <Route path="/"             element={<Landing />} />
-        <Route path="/login"        element={<Login />} />
+        <Route path="/"                   element={<Landing />} />
+        <Route path="/login"              element={<Login />} />
+        <Route path="/forgot-password"    element={<ForgotPassword />} />
         <Route path="/search" element={<Search />} />
         {/* /provider/setup and /provider/dashboard rank above /provider/:id
             because static segments score higher than dynamic ones in RR v6  */}

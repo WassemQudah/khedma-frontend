@@ -6,6 +6,7 @@
   "accountCreatedToast": "تم إنشاء الحساب! سجّل الدخول.",
   "loginFailed": "فشل تسجيل الدخول. حاول مجدداً.",
   "registrationFailed": "فشل التسجيل. حاول مجدداً.",
+  "forgotPassword": "نسيت كلمة المرور؟",
   "validation": {
     "emailRequired": "البريد الإلكتروني مطلوب.",
     "passwordRequired": "كلمة المرور مطلوبة.",

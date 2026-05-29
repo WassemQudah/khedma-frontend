@@ -35,6 +35,49 @@ export default function Booking() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
+  const [geoLoading, setGeoLoading] = useState(false);
+  const [geoError, setGeoError]   = useState("");
+  const [geoFilled, setGeoFilled] = useState(false);
+
+  const MAPS_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
+  const handleUseLocation = () => {
+    if (!navigator.geolocation) {
+      setGeoError(tb("location.notSupported"));
+      return;
+    }
+    setGeoLoading(true);
+    setGeoError("");
+    setGeoFilled(false);
+    navigator.geolocation.getCurrentPosition(
+      async ({ coords }) => {
+        try {
+          const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coords.latitude},${coords.longitude}&language=en&key=${MAPS_KEY}`;
+          const res  = await fetch(url);
+          const data = await res.json();
+          if (data.status === "OK" && data.results.length > 0) {
+            setServiceAddress(data.results[0].formatted_address);
+            setGeoFilled(true);
+          } else if (data.status === "REQUEST_DENIED") {
+            setGeoError(tb("location.apiKeyError"));
+          } else {
+            setGeoError(tb("location.notFound"));
+          }
+        } catch {
+          setGeoError(tb("location.fetchError"));
+        } finally {
+          setGeoLoading(false);
+        }
+      },
+      (err) => {
+        setGeoLoading(false);
+        if (err.code === 1) setGeoError(tb("location.denied"));
+        else setGeoError(tb("location.unavailable"));
+      },
+      { timeout: 10000 }
+    );
+  };
+
   useEffect(() => {
     getProvider(providerId)
       .then((data) => setProvider(data))
@@ -158,18 +201,37 @@ export default function Booking() {
               </div>
 
               <div className="form-group">
-                <label className="form-label" htmlFor="serviceAddress">
-                  {tb("serviceAddress")} <span>*</span>
-                </label>
+                <div className="booking-address-header">
+                  <label className="form-label" htmlFor="serviceAddress">
+                    {tb("serviceAddress")} <span>*</span>
+                  </label>
+                  <button
+                    type="button"
+                    className={`btn btn--sm booking-location-btn${geoFilled ? " booking-location-btn--filled" : ""}`}
+                    onClick={handleUseLocation}
+                    disabled={geoLoading || submitting}
+                    title={tb("location.btnTitle")}
+                  >
+                    {geoLoading
+                      ? <><LoadingSpinner size="sm" /> {tb("location.detecting")}</>
+                      : geoFilled
+                        ? <><i className="ri-map-pin-2-fill" /> {tb("location.detected")}</>
+                        : <><i className="ri-map-pin-2-line" /> {tb("location.btn")}</>
+                    }
+                  </button>
+                </div>
                 <input
                   id="serviceAddress"
                   type="text"
                   placeholder={tb("addressPlaceholder")}
                   value={serviceAddress}
-                  onChange={(e) => setServiceAddress(e.target.value)}
+                  onChange={(e) => { setServiceAddress(e.target.value); setGeoFilled(false); }}
                   required
                 />
-                <span className="form-hint">{tb("addressHint")}</span>
+                {geoError
+                  ? <span className="form-error"><i className="ri-error-warning-line" /> {geoError}</span>
+                  : <span className="form-hint">{tb("addressHint")}</span>
+                }
               </div>
 
               <div className="form-group">

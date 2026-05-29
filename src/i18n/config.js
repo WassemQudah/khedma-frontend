@@ -34,6 +34,8 @@ import privacyEn from "../locales/en/privacy.json";
 import privacyAr from "../locales/ar/privacy.json";
 import termsEn from "../locales/en/terms.json";
 import termsAr from "../locales/ar/terms.json";
+import forgotPasswordEn from "../locales/en/forgotPassword.json";
+import forgotPasswordAr from "../locales/ar/forgotPassword.json";
 
 /** @type {const} */
 export const SUPPORTED_LANGS = [
@@ -77,6 +79,7 @@ const namespaces = [
   "chat",
   "privacy",
   "terms",
+  "forgotPassword",
 ];
 
 i18n.use(initReactI18next).init({
@@ -99,6 +102,7 @@ i18n.use(initReactI18next).init({
       chat: chatEn,
       privacy: privacyEn,
       terms: termsEn,
+      forgotPassword: forgotPasswordEn,
     },
     ar: {
       landing: landingAr,
@@ -118,6 +122,7 @@ i18n.use(initReactI18next).init({
       chat: chatAr,
       privacy: privacyAr,
       terms: termsAr,
+      forgotPassword: forgotPasswordAr,
     },
   },
   lng: readStoredLanguage(),

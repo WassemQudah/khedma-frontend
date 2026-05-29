@@ -218,6 +218,14 @@ export default function Navbar() {
                 </div>
               </li>
               <li className="navbar__mobile-item">
+                <Link
+                  className="navbar__dropdown-item"
+                  style={{ width: "100%", borderRadius: "var(--r-md)", padding: "0.65rem 1rem", fontSize: "0.875rem", marginBottom: "0.5rem" }}
+                  to="/profile"
+                  onClick={closeMenus}
+                >
+                  <i className="ri-user-line" /> {t("myProfile")}
+                </Link>
                 <button
                   type="button"
                   className="navbar__dropdown-item navbar__dropdown-item--danger"

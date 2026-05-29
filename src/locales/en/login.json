@@ -6,6 +6,7 @@
   "accountCreatedToast": "Account created! Please sign in.",
   "loginFailed": "Login failed. Please try again.",
   "registrationFailed": "Registration failed. Please try again.",
+  "forgotPassword": "Forgot your password?",
   "validation": {
     "emailRequired": "Email is required.",
     "passwordRequired": "Password is required.",

@@ -183,8 +183,8 @@ export default function Login() {
       <div className="login-page__bg" aria-hidden />
       <div className="login-card card animate-fade-up">
 
-        <Link to="/" className="login-logo">
-          <span>K</span>hedma
+        <Link to="/" className="login-logo" style={{ display: "flex", justifyContent: "center", marginBottom: "0.5rem" }}>
+          <img src="/NoBgKhedma.png" alt="Khedma Logo" style={{ height: "130px", objectFit: "contain" }} />
         </Link>
         <p className="login-tagline">{t("tagline")}</p>
 
@@ -243,6 +243,11 @@ export default function Login() {
                 </button>
               </div>
               {errors.password && <span className="form-error">{errors.password}</span>}
+              <div className="fp-link-row">
+                <Link to="/forgot-password" className="login-switch__link" style={{ fontSize: "0.82rem" }}>
+                  {t("forgotPassword")}
+                </Link>
+              </div>
             </div>
 
             <button type="submit" className="btn btn--primary btn--full btn--lg" disabled={loading}>

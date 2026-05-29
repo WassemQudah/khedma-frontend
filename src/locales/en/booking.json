@@ -2,6 +2,18 @@
   "backProfile": "Back to Profile",
   "bookingSummary": "Booking Summary",
   "loadProviderError": "Could not load provider details.",
+  "location": {
+    "btn": "Use my location",
+    "btnTitle": "Auto-fill address from your current GPS location",
+    "detecting": "Detecting…",
+    "detected": "Location detected",
+    "notSupported": "Geolocation is not supported by your browser.",
+    "denied": "Location access was denied. Please allow it in your browser settings.",
+    "unavailable": "Could not get your location. Please try again.",
+    "fetchError": "Could not look up the address. Please enter it manually.",
+    "notFound": "Address not found. Please enter it manually.",
+    "apiKeyError": "Maps API key is missing or invalid. Please contact support."
+  },
   "bookingFormTitle": "Confirm Your Booking",
   "validation": {
     "selectDate": "Please select a service date and time.",

@@ -311,8 +311,14 @@
   .navbar__chevron   { display: none; }
 
   /* Hide language switcher and auth from top bar on mobile */
-  .navbar__lang { display: none; }
+  .navbar__inner > .navbar__lang { display: none; }
   .navbar__auth { display: none; }
+
+  /* Ensure the mobile menu language switcher is centered and visible */
+  .navbar__mobile-extra .navbar__lang {
+    display: inline-flex;
+    margin: 0 auto;
+  }
 
   /* Show mobile-only menu extras */
   .navbar__mobile-divider { display: block; }

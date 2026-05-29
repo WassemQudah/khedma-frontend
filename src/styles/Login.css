@@ -37,7 +37,9 @@
   margin-bottom: 0.25rem;
   letter-spacing: -0.03em;
 }
-.login-logo span { color: var(--c-accent); }
+.login-logo img {
+  height: 130px;
+}
 
 .login-tagline {
   text-align: center;
@@ -135,3 +137,11 @@
 }
 .login-terms a { color: var(--c-accent); }
 .login-terms a:hover { text-decoration: underline; }
+
+/* Forgot password link row */
+.fp-link-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.25rem;
+}
+
