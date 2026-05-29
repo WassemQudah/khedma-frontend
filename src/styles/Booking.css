@@ -93,3 +93,12 @@
   .booking-form__actions { flex-direction: column-reverse; }
   .booking-form__actions .btn { width: 100%; }
 }
+
+/* Problem photo upload section */
+.booking-photo-upload {
+  background: var(--c-surface-2);
+  border: 1.5px dashed var(--c-border-h);
+  border-radius: var(--r-md);
+  padding: 1rem;
+}
+

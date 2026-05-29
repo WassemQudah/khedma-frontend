@@ -22,5 +22,11 @@
   "jobDescription": "وصف العمل",
   "descriptionPlaceholder": "صف العمل المطلوب بأكبر قدر ممكن من التفصيل…",
   "confirmBooking": "تأكيد الحجز",
-  "defaultInitial": "م"
+  "defaultInitial": "م",
+  "photoUpload": {
+    "label": "صورة المشكلة",
+    "optional": "اختياري",
+    "hint": "أرفق صورة ليتمكن مقدّم الخدمة من رؤية المشكلة قبل القبول.",
+    "uploaderHint": "JPG / PNG · الحجم الأقصى 5 ميغابايت"
+  }
 }

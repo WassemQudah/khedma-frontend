@@ -22,5 +22,11 @@
   "jobDescription": "Job Description",
   "descriptionPlaceholder": "Describe the work needed — be as specific as possible to get an accurate quote…",
   "confirmBooking": "Confirm Booking",
-  "defaultInitial": "P"
+  "defaultInitial": "P",
+  "photoUpload": {
+    "label": "Photo of the Problem",
+    "optional": "Optional",
+    "hint": "Upload a photo so the provider can see the issue before accepting.",
+    "uploaderHint": "JPG / PNG · max 5 MB"
+  }
 }

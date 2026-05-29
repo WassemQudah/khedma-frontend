@@ -30,6 +30,7 @@
     "rateFail": "Rating failed."
   },
   "attachedPhotoAlt": "Attached photo",
+  "problemPhotoLabel": "Problem Photo",
   "jodHr": "{{n}} JOD/hr",
   "pay": "Pay",
   "edit": "Edit",

@@ -494,10 +494,13 @@ export default function CustomerDashboard() {
                     <i className="ri-sticky-note-line" /> {booking.description}
                   </p>
                 )}
-                {booking.imageUrl && (
+                {(booking.problemImageUrl ?? booking.imageUrl) && (
                   <div className="cdash-attachment">
-                    <a href={booking.imageUrl} target="_blank" rel="noopener noreferrer">
-                      <img src={booking.imageUrl} alt={t("attachedPhotoAlt")} loading="lazy" />
+                    <div className="cdash-attachment__label">
+                      <i className="ri-camera-line" /> {t("problemPhotoLabel")}
+                    </div>
+                    <a href={booking.problemImageUrl ?? booking.imageUrl} target="_blank" rel="noopener noreferrer">
+                      <img src={booking.problemImageUrl ?? booking.imageUrl} alt={t("attachedPhotoAlt")} loading="lazy" />
                     </a>
                   </div>
                 )}

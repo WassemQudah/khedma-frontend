@@ -156,7 +156,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo">
-          <img src="/src/assets/NoBgKhedma.png" alt="Khedma Logo" style={{ height: "52px", objectFit: "contain" }} />
+          <img src="/NoBgKhedma.png" alt="Khedma Logo" style={{ height: "52px", objectFit: "contain" }} />
         </Link>
 
         <button

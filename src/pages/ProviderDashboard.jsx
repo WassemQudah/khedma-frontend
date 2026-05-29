@@ -390,13 +390,13 @@ export default function ProviderDashboard() {
                 {booking.description && (
                   <p className="pdash-request__notes"><i className="ri-sticky-note-line" /> "{booking.description}"</p>
                 )}
-                {booking.imageUrl && (
+                {(booking.problemImageUrl ?? booking.imageUrl) && (
                   <div className="pdash-attachment">
                     <div className="pdash-attachment__label">
-                      <i className="ri-image-line" /> {t("customerPhoto")}
+                      <i className="ri-camera-line" /> {t("customerPhoto")}
                     </div>
-                    <a href={booking.imageUrl} target="_blank" rel="noopener noreferrer">
-                      <img src={booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
+                    <a href={booking.problemImageUrl ?? booking.imageUrl} target="_blank" rel="noopener noreferrer">
+                      <img src={booking.problemImageUrl ?? booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
                     </a>
                   </div>
                 )}
@@ -455,13 +455,13 @@ export default function ProviderDashboard() {
                 {booking.description && (
                   <p className="pdash-request__notes"><i className="ri-sticky-note-line" /> {booking.description}</p>
                 )}
-                {booking.imageUrl && (
+                {(booking.problemImageUrl ?? booking.imageUrl) && (
                   <div className="pdash-attachment">
                     <div className="pdash-attachment__label">
-                      <i className="ri-image-line" /> {t("customerPhoto")}
+                      <i className="ri-camera-line" /> {t("customerPhoto")}
                     </div>
-                    <a href={booking.imageUrl} target="_blank" rel="noopener noreferrer">
-                      <img src={booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
+                    <a href={booking.problemImageUrl ?? booking.imageUrl} target="_blank" rel="noopener noreferrer">
+                      <img src={booking.problemImageUrl ?? booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
                     </a>
                   </div>
                 )}
@@ -512,13 +512,13 @@ export default function ProviderDashboard() {
                 {booking.description && (
                   <p className="pdash-request__notes"><i className="ri-sticky-note-line" /> {booking.description}</p>
                 )}
-                {booking.imageUrl && (
+                {(booking.problemImageUrl ?? booking.imageUrl) && (
                   <div className="pdash-attachment">
                     <div className="pdash-attachment__label">
-                      <i className="ri-image-line" /> {t("customerPhoto")}
+                      <i className="ri-camera-line" /> {t("customerPhoto")}
                     </div>
-                    <a href={booking.imageUrl} target="_blank" rel="noopener noreferrer">
-                      <img src={booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
+                    <a href={booking.problemImageUrl ?? booking.imageUrl} target="_blank" rel="noopener noreferrer">
+                      <img src={booking.problemImageUrl ?? booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
                     </a>
                   </div>
                 )}
@@ -568,13 +568,13 @@ export default function ProviderDashboard() {
                 {booking.description && (
                   <p className="pdash-request__notes"><i className="ri-sticky-note-line" /> {booking.description}</p>
                 )}
-                {booking.imageUrl && (
+                {(booking.problemImageUrl ?? booking.imageUrl) && (
                   <div className="pdash-attachment">
                     <div className="pdash-attachment__label">
-                      <i className="ri-image-line" /> {t("customerPhoto")}
+                      <i className="ri-camera-line" /> {t("customerPhoto")}
                     </div>
-                    <a href={booking.imageUrl} target="_blank" rel="noopener noreferrer">
-                      <img src={booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
+                    <a href={booking.problemImageUrl ?? booking.imageUrl} target="_blank" rel="noopener noreferrer">
+                      <img src={booking.problemImageUrl ?? booking.imageUrl} alt={t("attachmentAlt")} loading="lazy" />
                     </a>
                   </div>
                 )}

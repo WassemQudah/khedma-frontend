@@ -6,6 +6,7 @@ import { getProvider } from "../api/services";
 import { resolveCategories } from "../config/config";
 import useCategories from "../hooks/useCategories";
 import LoadingSpinner from "../components/LoadingSpinner";
+import ImageUploader from "../components/ImageUploader";
 import { useToast } from "../components/Toast";
 import parseApiError from "../utils/parseApiError";
 import "../styles/Booking.css";
@@ -30,7 +31,7 @@ export default function Booking() {
   const [serviceDate, setServiceDate] = useState(toLocalDateTimeInput());
   const [serviceAddress, setServiceAddress] = useState("");
   const [description, setDescription] = useState("");
-  const [attachmentUrl, setAttachmentUrl] = useState(""); // optional photo of the problem
+  const [problemImageUrl, setProblemImageUrl] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
@@ -55,7 +56,7 @@ export default function Booking() {
         serviceDate: new Date(serviceDate).toISOString(),
         serviceAddress: serviceAddress.trim(),
         description: description.trim(),
-        ...(attachmentUrl ? { imageUrl: attachmentUrl } : {}),
+        ...(problemImageUrl ? { problemImageUrl } : {}),
       });
       showToast(tb("successToast"), "success");
       navigate("/dashboard");
@@ -186,10 +187,24 @@ export default function Booking() {
                 <span className="form-hint">{tc("charactersCount", { current: description.length, max: 1000 })}</span>
               </div>
 
-              {/* Optional photo attachment */}
-              {/* <div className="form-group">
-                <ImageUploader ... />
-              </div> */}
+              {/* Optional photo of the problem */}
+              <div className="form-group booking-photo-upload">
+                <label className="form-label">
+                  <i className="ri-image-add-line" /> {tb("photoUpload.label")}
+                  <span className="badge badge--muted" style={{ marginLeft: "0.5rem", fontSize: "0.7rem" }}>
+                    {tb("photoUpload.optional")}
+                  </span>
+                </label>
+                <p className="form-hint" style={{ marginBottom: "0.5rem" }}>{tb("photoUpload.hint")}</p>
+                <ImageUploader
+                  value={problemImageUrl}
+                  onChange={setProblemImageUrl}
+                  fieldName="file"
+                  label=""
+                  hint={tb("photoUpload.uploaderHint")}
+                  disabled={submitting}
+                />
+              </div>
 
               <div className="booking-form__actions">
                 <button

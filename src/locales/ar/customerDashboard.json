@@ -30,6 +30,7 @@
     "rateFail": "فشل التقييم."
   },
   "attachedPhotoAlt": "صورة مرفقة",
+  "problemPhotoLabel": "صورة المشكلة",
   "jodHr": "{{n}} دينار/ساعة",
   "pay": "ادفع",
   "edit": "تعديل",
